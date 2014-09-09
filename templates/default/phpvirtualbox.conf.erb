@@ -1,0 +1,8 @@
+Alias /virtualbox <%= node[:virtualbox][:webportal][:path] %>
+<Directory "<%= node[:virtualbox][:webportal][:path] %>">
+    Options -Indexes
+    AllowOverride All
+
+    Order allow,deny
+    Allow from all
+</Directory>
