@@ -51,7 +51,7 @@ when 'rhel', 'fedora'
     gpgkey node[:virtualbox][:gpg]
   end
 
-  Chef::Config[:yum_timeout] = node[:virtualbox][:timeout ]
+  Chef::Config[:yum_timeout] = node[:virtualbox][:timeout]
 
   package "VirtualBox-#{version_pkg}" do
     retries 5
